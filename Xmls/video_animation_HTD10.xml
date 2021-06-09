@@ -1,0 +1,167 @@
+<VideoDescriptors 
+xmlns = "http://www.w3.org/2000/10/XMLSchema"
+xmlns:mpeg7 = "http://www.mpeg7.org/2001/MPEG-7_Schema"
+mpeg7:schemaLocation = "http://www.w3.org/2000/10/XMLSchema selfDefineMpeg7.xsd">
+	<HTDs numOfFrames="10">
+		<Frame layerFlag="1">
+			<mean>10</mean>
+			<std>100</std>
+			<Coeff1>
+				198 154 147 170 149 158 179 153 
+				180 172 162 155 156 181 163 185 
+				147 157 180 182 175 183 183 163 
+				186 166 150 150 152 151 
+			</Coeff1>
+			<Coeff2>
+				200 150 147 174 150 152 171 146 
+				182 171 152 150 141 174 145 172 
+				130 153 167 151 174 159 182 157 
+				167 135 120 134 117 133 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+		<Frame layerFlag="1">
+			<mean>0</mean>
+			<std>0</std>
+			<Coeff1>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff1>
+			<Coeff2>
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 0 0 
+				0 0 0 0 0 0 
+			</Coeff2>
+		</Frame>
+	</HTDs>
+</VideoDescriptors>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schema
+xmlns="http://www.w3.org/2000/10/XMLSchema"
+xmlns:mpeg7="http://www.mpeg7.org/2001/MPEG-7_Schema"
+targetNamespace="http://www.mpeg7.org/2001/MPEG-7_Schema">
+  
+  <complexType name="ScalableColorType" final="#all">
+    <complexContent>
+      <extension base="mpeg7:VisualDType">
+        <sequence>
+          <element name="Coeff" type="mpeg7:integerVector"/>
+        </sequence>
+        <attribute name="numOfCoeff" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <enumeration value="16"/>
+              <enumeration value="32"/>
+              <enumeration value="64"/>
+              <enumeration value="128"/>
+              <enumeration value="256"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="numOfBitplanesDiscarded" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <enumeration value="0"/>
+              <enumeration value="1"/>
+              <enumeration value="2"/>
+              <enumeration value="3"/>
+              <enumeration value="4"/>
+              <enumeration value="6"/>
+              <enumeration value="8"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="ScalableColorDs">
+    <complexContent>
+      <sequence>
+        <element name="Frame" type="ScalableColorType" minOccurs="1"/>
+      </sequence>
+      <attribute name="numOfFrames" use="required">
+        <simpleType>
+          <restriction base="integer">
+            <minInclusiove value="0"/>
+          </restriction>
+        </simpleType>
+      </attribute>
+    </complexContent>
+  </complexType>
+  
+  <complexType name="ColorStructureType" final="#all">
+    <complexContent>
+      <extension base="mpeg7:VisualDType">
+        <sequence>
+          <element name="Coeff" type="mpeg7:integerVector"/>
+        </sequence>
+        <attribute name="numOfCoeff" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <enumeration value="32"/>
+              <enumeration value="64"/>
+              <enumeration value="128"/>
+              <enumeration value="256"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="ColorStructureDs">
+    <complexContent>
+      <sequence>
+        <element name="Frame" type="ColorStructureType" minOccurs="1"/>
+      </sequence>
+      <attribute name="numOfFrames" use="required">
+        <simpleType>
+          <restriction base="integer">
+            <minInclusiove value="0"/>
+          </restriction>
+        </simpleType>
+      </attribute>
+    </complexContent>
+  </complexType>
+
+  <complexType name="DominantColorType" final="#all">
+    <complexContent>
+      <extension base="mpeg7:VisualDType">
+        <sequence>
+		  <element name="SpatialCoherency" type="integer" minOccurs="0"/>
+          <element name="ColorInfo" type="mpeg7:integerVector" minOccurs="1"/>
+        </sequence>
+        <attribute name="ifNormalize" use="required">
+          <simpleType>
+            <restriction base="boolean">
+              <enumeration value="true"/>
+              <enumeration value="false"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="ifVariance" use="required">
+          <simpleType>
+            <restriction base="boolean">
+              <enumeration value="true"/>
+              <enumeration value="false"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+		<attribute name="ifSpatial" use="required">
+          <simpleType>
+            <restriction base="boolean">
+              <enumeration value="true"/>
+              <enumeration value="false"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="bin1" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <minExclusive value="1"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="bin2" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <minExclusive value="1"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="bin3" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <minExclusive value="1"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="DominantColorDs">
+    <complexContent>
+      <sequence>
+        <element name="Frame" type="DominantColorType" minOccurs="1"/>
+      </sequence>
+      <attribute name="numOfFrames" use="required">
+        <simpleType>
+          <restriction base="integer">
+            <minInclusiove value="0"/>
+          </restriction>
+        </simpleType>
+      </attribute>
+    </complexContent>
+  </complexType>
+
+  <complexType name="ColorLayoutType" final="#all">
+    <complexContent>
+      <extension base="mpeg7:VisualDType">
+        <sequence>
+          <element name="YCoeff" type="mpeg7:integerVector"/>
+          <element name="CbCoeff" type="mpeg7:integerVector"/>
+          <element name="CrCoeff" type="mpeg7:integerVector"/>
+        </sequence>
+        <attribute name="numOfYCoeff" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <enumeration value="3"/>
+              <enumeration value="6"/>
+              <enumeration value="10"/>
+              <enumeration value="15"/>
+              <enumeration value="21"/>
+              <enumeration value="28"/>
+              <enumeration value="64"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="numOfCCoeff" use="required">
+          <simpleType>
+            <restriction base="integer">
+              <enumeration value="3"/>
+              <enumeration value="6"/>
+              <enumeration value="10"/>
+              <enumeration value="15"/>
+              <enumeration value="21"/>
+              <enumeration value="28"/>
+              <enumeration value="64"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="ColorLayoutDs">
+    <complexContent>
+      <sequence>
+        <element name="Frame" type="ColorLayoutType" minOccurs="1"/>
+      </sequence>
+      <attribute name="numOfFrames" use="required">
+        <simpleType>
+          <restriction base="integer">
+            <minInclusiove value="0"/>
+          </restriction>
+        </simpleType>
+      </attribute>
+    </complexContent>
+  </complexType>
+
+  <complexType name="EdgeHistogramType" final="#all">
+    <complexContent>
+      <extension base="mpeg7:VisualDType">
+        <sequence>
+          <element name="Coeff" type="mpeg7:integerVector"/>
+        </sequence>
+		<attribute name="numOfCoeff" use="optional">
+          <simpleType>
+            <restriction base="integer">
+              <minInclusive value="1">
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="EdgeHistogramDs">
+    <complexContent>
+      <sequence>
+        <element name="Frame" type="EdgeHistogramType" minOccurs="1"/>
+      </sequence>
+      <attribute name="numOfFrames" use="required">
+        <simpleType>
+          <restriction base="integer">
+            <minInclusiove value="0"/>
+          </restriction>
+        </simpleType>
+      </attribute>
+    </complexContent>
+  </complexType>
+
+  <complexType name="HomogeneousTexturetType" final="#all">
+    <complexContent>
+      <extension base="mpeg7:VisualDType">
+        <sequence>
+          <element name="mean" type="integer"/>
+          <element name="std" type="integer"/>
+          <element name="Coeff1" type="mpeg7:integerVector"/>
+          <element name="Coeff2" type="mpeg7:intergerVector" minOccurs="0"/>
+        </sequence>
+        <attribute name="layerFlag" use="required">
+          <simpleType>
+            <restriction base="boolean">
+              <enumeration value="true"/>
+              <enumeration value="false"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="HomogeneousTextureDs">
+    <complexContent>
+      <sequence>
+        <element name="Frame" type="HomogeneousTextureType" minOccurs="1"/>
+      </sequence>
+      <attribute name="numOfFrames" use="required">
+        <simpleType>
+          <restriction base="integer">
+            <minInclusiove value="0"/>
+          </restriction>
+        </simpleType>
+      </attribute>
+    </complexContent>
+  </complexType>
+
+  <element name="VideoDescriptors">
+    <complexType>
+      <complexContent>
+        <sequence>
+          <element name="SCDs" type="ScalableColorDs" minOccurs="0"/>
+          <element name="CSDs" type="ColorStructureDs" minOccurs="0"/>
+          <element name="DCDs" type="DominantColorDs" minOccurs="0"/>
+          <element name="CLDs" type="ColorLayoutDs" minOccurs="0"/>
+          <element name="EHDs" type="EdgeHistogramDs" minOccurs="0"/>
+          <element name="HTDs" type="HomogeneousTextureDs" minOccurs="0"/>
+        </sequence>
+        <attribute name="framePerSecond" use="optional">
+          <simpleType>
+            <restriction base="integer">
+              <minInclusive value="1"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="frameWidth" use="optional">
+          <simpleType>
+            <restriction base="integer">
+              <minInclusive value="1"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+        <attribute name="frameHeight" use="optional">
+          <simpleType>
+            <restriction base="integer">
+              <minInclusive value="1"/>
+            </restriction>
+          </simpleType>
+        </attribute>
+      </complexContent>
+    </complexType>
+  </element>
+
+</schema>

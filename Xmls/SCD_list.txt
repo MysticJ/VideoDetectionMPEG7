@@ -1,0 +1,12 @@
+Xmls/video_human_SCD10.xml
+Xmls/video_gym_SCD10.xml
+Xmls/video_a_SCD10.xml
+Xmls/video_b_SCD10.xml
+Xmls/video_c_SCD10.xml
+Xmls/video_animation_SCD10.xml
+Xmls/video_violin_SCD10.xml
+Xmls/video_elephant_SCD10.xml
+Xmls/video_ocean_SCD10.xml
+Xmls/video_1_infrared_SCD10.xml
+Xmls/video_1_SCD10.xml
+Xmls/video_2_infrared_SCD10.xml

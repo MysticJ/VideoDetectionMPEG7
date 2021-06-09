@@ -1,0 +1,12 @@
+Xmls/video_human_HTD10.xml
+Xmls/video_gym_HTD10.xml
+Xmls/video_a_HTD10.xml
+Xmls/video_b_HTD10.xml
+Xmls/video_c_HTD10.xml
+Xmls/video_animation_HTD10.xml
+Xmls/video_violin_HTD10.xml
+Xmls/video_elephant_HTD10.xml
+Xmls/video_ocean_HTD10.xml
+Xmls/video_1_infrared_HTD10.xml
+Xmls/video_1_HTD10.xml
+Xmls/video_2_infrared_HTD10.xml
